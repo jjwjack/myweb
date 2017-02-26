@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width; initial-scale = 1;">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<style>
+		body{
+			background-color: #ddd;
+		}
+		.ppt:not(.ppt-main){
+			display: none;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<ul class="nav nav-pills col-md-offset-4">
+				<li class="active"><a href="">主页</a></li>
+				<li><a href="#">主页</a></li>
+				<li><a href="#">主页</a></li>
+				<li class="dropdown">
+					<a data-toggle="dropdown" href="#">主页<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="">123</a></li>
+						<li><a href="">123</a></li>
+						<li><a href="">123</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>	
+		<div>
+			<div class="ppt ppt-main">
+				<p>php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! php is very much! </p>
+			</div>
+			<div class="ppt">
+				<p>111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! 111 is very much! </p>
+			</div>
+			<div class="ppt">
+				<p>222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! 222 is very much! </p>
+			</div>
+		</div>	
+	</div>
+
+
+	
+</body>
+<script>
+
+	$("li").mouseover(function(){
+		var numNavs = $(this).index();
+		$(".ppt").eq(numNavs).show();
+		$(".ppt").not($(".ppt").eq(numNavs)).hide();
+	});
+	$(".dropdown").mouseover(function(){
+		$(this).addClass("open").mouseout(function(){
+			$(this).removeClass("open");
+		});
+	});
+</script>
+</html>

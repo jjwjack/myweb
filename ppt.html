@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width; initial-scale = 1;">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<style>
+		body{
+			background-color: #ddd;
+		}
+		.item{
+			height: 300px;
+		}
+		.left,.right{
+			font-size: 200px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="myppt" class="carousel" data-interval="1000" data-ride="carousel">
+		<div class="carousel-inner">
+			<img class="item active" src="1.jpg" alt="">
+			<img class="item" src="2.jpg" alt="">
+			<img class="item" src="3.jpg" alt="">
+		</div>
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#myppt"></li>
+			<li data-slide-to = "1" data-target="#myppt"></li>
+			<li data-slide-to = "2" data-target="#myppt"></li>
+		</ol>
+		<a class="carousel-control left" data-slide="prev" href="#myppt">&lsaquo;</a>
+		<a class="carousel-control right" data-slide="next" href="#myppt">&rsaquo;</a>
+	</div>
+
+
+	
+</body>
+<script>
+
+	
+</script>
+</html>
